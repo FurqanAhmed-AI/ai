@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .cursor-dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+  }
+  
+  .cursor-outline{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    
+  }
+  
+  .cursor-dot, .cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+  }
